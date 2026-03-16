@@ -3,13 +3,15 @@
 import { useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { LayoutGrid, ChevronRight, Grid2X2, ChevronDown, User, PanelLeftClose, PanelLeftOpen } from 'lucide-react'
+import Image from 'next/image'
 
 function SpinsLogo() {
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
+    <Image
       src="/spins-logo.svg"
       alt="SPINS"
+      width={80}
+      height={20}
       style={{ height: '20px', width: 'auto', flexShrink: 0 }}
     />
   )
